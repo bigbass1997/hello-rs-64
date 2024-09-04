@@ -1,6 +1,12 @@
 # hello-rs-64
 This is a demo program to show off basic usage of [my iQue Player/N64 hardware library](https://github.com/Jhynjhiruu/n64-rs). It has more features beyond what's shown off here, but this is about as simple an application as you can write, which clarifies what's necessary for the build to work.
 
+## Compiling with nust64
+1. Install Rust: https://www.rust-lang.org/tools/install
+2. Clone this repo
+3. `cargo install nust64`
+4. Run `cargo run --release` to build the rom.
+
 ## Compiling
 Ensure you have a Rust toolchain set up, plus binutils (GNU is preferred if available, though you'll also need `llvm-objcopy`), and then just run `make`. You might need to add `rust-src` via Rustup before it'll build.
 

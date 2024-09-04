@@ -17,5 +17,11 @@
     "target-endian": "big",
     "target-pointer-width": "32",
     "vendor": "ultra64",
-    "max-atomic-width": 0
-  }
+    "max-atomic-width": 0,
+    "pre-link-args": {
+        "ld.lld": [
+            "--script=targets/linker.ld",
+            "--Map=target/map"
+        ]
+    }
+}
